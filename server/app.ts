@@ -9,7 +9,6 @@ const app = express();
 const PORT = process.env.PORT || 3109;
 
 app.use(cors()); // allow our react app (the client folder) to call the API from here.
-
 app.use(express.json()); // turn the JSON body of a request into req.body
 
 app.use("/api/contact", contactRouter);
